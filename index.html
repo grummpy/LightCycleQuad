@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Light Cycle Quad</title>
+  <link rel="icon" href="assets/icon.jpg" type="image/jpeg">
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #05060a;
+      color: #e7f4ff;
+      font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+    }
+    body {
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+    canvas {
+      width: min(100vw, calc(100vh * 16 / 9));
+      height: min(100vh, calc(100vw * 9 / 16));
+      background: #05060a;
+      touch-action: none;
+      outline: none;
+    }
+    noscript {
+      max-width: 36rem;
+      padding: 2rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="1280" height="720" tabindex="0" aria-label="Light Cycle Quad"></canvas>
+  <noscript>Light Cycle Quad needs JavaScript to run. It is a local page with no network calls.</noscript>
+  <script type="module" src="src/ui/main.js"></script>
+</body>
+</html>
